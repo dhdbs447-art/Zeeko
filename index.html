@@ -3,8 +3,8 @@
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Zakaria – الخدمات التعليمية</title>
-  <meta name="description" content="مشاريع تخرج وبحوث، حل واجبات، كتابة تقارير مرحلية ونهائية، شروحات وتلخيصات، كويزات وامتحانات، عروض وتصاميم، سيرة ذاتية احترافية.">
+  <title>زيكو هليب التعليميه</title>
+  <meta name="description" content="خدمات أكاديمية مميزة: اسايمنت، امتحانات، واجبات، بروجكت، بحوث، تقارير، شروحات وتلخيصات، سيفي وتصميمات." />
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;600;800&display=swap" rel="stylesheet">
@@ -14,6 +14,7 @@
       --card:#112015; --text:#fffbf0; --muted:#ddd6ae;
       --gold:#e7c369;
       --btn:#1b2b1b; --btnHover:#223722; --shadow:0 10px 30px rgba(0,0,0,.35); --radius:18px;
+      --chip:#152714; --chipBorder: rgba(231,195,105,.35);
     }
     *{box-sizing:border-box}
     body{ margin:0; min-height:100svh; color:var(--text); font-family:'Cairo', system-ui; background: radial-gradient(1200px 800px at 50% -10%, var(--bg2), var(--bg1)); display:grid; place-items:center; padding:28px 16px; }
@@ -23,7 +24,6 @@
     .logo{width:92px; height:92px; border-radius:16px; background:#0e1c0f; display:grid; place-items:center; overflow:hidden; box-shadow:inset 0 0 0 2px rgba(231,195,105,.25)}
     .logo img{width:100%; height:100%; object-fit:cover}
     h1{font-size:30px; margin:0 0 6px; color:var(--gold)}
-    .sub{color:var(--muted); font-size:14px}
     .tagline{font-weight:800; text-align:center; margin:8px 0 14px; font-size:18px; color:var(--gold)}
     .banner{border-radius:18px; overflow:hidden; border:1px solid rgba(231,195,105,.25); margin:12px 0 6px}
     .banner img{width:100%; height:auto; display:block}
@@ -35,14 +35,15 @@
     .btn .desc{margin-inline-start:auto; color:var(--muted); font-size:13px}
     .hr{height:1px; background:linear-gradient(90deg, transparent, rgba(231,195,105,.5), transparent); margin:18px 0}
     .services{display:grid; gap:14px; grid-template-columns: repeat( auto-fill, minmax(220px, 1fr) ); margin:10px 0 6px}
-    .svc{background:rgba(231,195,105,.06); border:1px solid rgba(231,195,105,.25); border-radius:20px; padding:14px; display:flex; flex-direction:column; gap:8px; min-height:140px; transition:transform .06s ease, border-color .15s ease; cursor:pointer}
-    .svc:hover{transform:translateY(-2px); border-color:rgba(231,195,105,.5)}
+    .svc{background:rgba(231,195,105,.06); border:1px solid rgba(231,195,105,.25); border-radius:20px; padding:14px; display:flex; flex-direction:column; gap:8px; min-height:160px}
     .svc .row{display:flex; align-items:center; gap:10px}
     .svc .ico{font-size:22px; color:var(--gold)}
     .svc .name{font-weight:800}
     .svc .en{color:var(--muted); font-size:12px}
-    .svc .go{margin-top:auto; display:inline-flex; align-items:center; gap:8px; text-decoration:none; color:var(--text); background:#152714; border:1px solid rgba(231,195,105,.35); padding:8px 10px; border-radius:12px}
-    .svc .go small{color:var(--muted)}
+    .actions{margin-top:auto; display:flex; gap:8px; flex-wrap:wrap}
+    .chip{display:inline-flex; align-items:center; gap:8px; padding:8px 10px; border-radius:12px; background:var(--chip); border:1px solid var(--chipBorder); color:var(--text); text-decoration:none; font-weight:700; font-size:13px}
+    .chip small{color:var(--muted)}
+    .chip:hover{transform:translateY(-1px); border-color:rgba(231,195,105,.6)}
     .socials{display:flex; gap:10px; margin-top:10px}
     .socials a{width:44px; height:44px; border-radius:50%; display:grid; place-items:center; text-decoration:none; background:rgba(231,195,105,.12); border:1px solid rgba(231,195,105,.25)}
     .foot{display:flex; justify-content:center; gap:10px; color:var(--muted); font-size:12px}
@@ -54,100 +55,151 @@
     <section class="card">
       <div class="brand">
         <div class="logo" aria-hidden="true">
-          <!-- ✅ الشعار من الجذر -->
-          <img src="logo-zakaria.png" alt="Zakaria Logo" />
+          <img src="logo.png" alt="Logo" />
         </div>
         <div>
-          <h1>Zakaria للخدمات التعليمية</h1>
-          <div class="sub">واتساب: 0535282067</div>
+          <h1>زيكو هليب التعليميه</h1>
         </div>
       </div>
 
-      <div class="tagline">🎓 من خدماتنا: مشاريع تخرج، واجبات، تقارير، شروحات، كويزات، تصاميم وسيرة ذاتية 🎓</div>
+      <div class="tagline">🎓 خدمات أكاديمية مميزة 🎓</div>
       <div class="banner">
-        <!-- ✅ البانر من الجذر -->
-        <img src="banner-zakaria.jpg" alt="خدمات Zakaria"/>
+        <img src="banner.jpg" alt="خدمات زيكو هليب"/>
       </div>
 
       <div class="links">
-        <a class="btn" href="https://wa.me/966535282067?text=%D9%85%D8%B1%D8%AD%D8%A8%D8%A7%D9%8B%20%D8%A3%D8%B1%D9%8A%D8%AF%20%D8%AE%D8%AF%D9%85%D8%A9%20%D9%85%D9%86%20Zakaria%20%D9%84%D8%AD%D8%A7%D9%84%D8%AA%D9%8A." target="_blank" rel="noopener">
-          <span class="icon">💬</span>
-          <span class="ttl">تواصل واتساب</span>
-          <span class="desc">رد سريع</span>
+        <a class="btn" href="https://wa.me/966535282067" target="_blank" rel="noopener">
+          <span class="icon">📞</span>
+          <span class="ttl">واتساب</span>
+          <span class="desc">تواصل مباشر</span>
         </a>
         <a class="btn" href="https://t.me/Zak7117" target="_blank" rel="noopener">
           <span class="icon">✈️</span>
           <span class="ttl">تيليجرام</span>
-          <span class="desc">@Zak7117</span>
+          <span class="desc">قناة / مراسلة</span>
         </a>
       </div>
 
       <div class="hr"></div>
 
       <div class="services">
-        <div class="svc" data-wa="مرحباً 🌟، أحتاج مساعدة في مشروع تخرج/بحث ليظهر بأفضل صورة أكاديمية.">
-          <div class="row"><span class="ico">🏆</span><span class="name">مشاريع تخرج وبحوث</span></div>
-          <div class="en">Graduation Projects & Research</div>
-          <a class="go" href="javascript:void(0)">تواصل <small>واتساب</small></a>
+
+        <!-- ① الأسايمنت (قناة موحدة مع الواجبات) -->
+        <div class="svc">
+          <div class="row"><span class="ico">①</span><span class="name">الاسايمنت</span></div>
+          <div class="en">Assignments</div>
+          <div class="actions">
+            <a class="chip wa" data-wa="مرحباً 🌟، أحتاج مساعدتك في إعداد الأسايمنت الخاص بي بأفضل جودة وفي الوقت المحدد.">واتساب</a>
+            <a class="chip tg" href="https://t.me/Zak7117" target="_blank" rel="noopener">تلجرام</a>
+            <!-- قناة موحدة مع الواجبات -->
+            <a class="chip ch" href="https://t.me/+4jS2H4ZfurI3ZmRk" target="_blank" rel="noopener">القناة</a>
+          </div>
         </div>
 
-        <div class="svc" data-wa="مرحباً ✍️، لدي واجبات وأرغب بإنجازها بإتقان وفي الوقت المحدد.">
-          <div class="row"><span class="ico">📝</span><span class="name">حل واجبات المواد</span></div>
-          <div class="en">Assignments & Homework</div>
-          <a class="go" href="javascript:void(0)">تواصل <small>واتساب</small></a>
+        <!-- ② الإمتحانات والكويزات -->
+        <div class="svc">
+          <div class="row"><span class="ico">②</span><span class="name">الإمتحانات والكويزات</span></div>
+          <div class="en">Exams</div>
+          <div class="actions">
+            <a class="chip wa" data-wa="مرحباً 🎯، أود معرفة كيف يمكنكم دعمي في الاختبارات والكويزات القادمة.">واتساب</a>
+            <a class="chip tg" href="https://t.me/Zak7117" target="_blank" rel="noopener">تلجرام</a>
+            <a class="chip ch" href="https://t.me/+Vw7P5sZZyB41ZGM0" target="_blank" rel="noopener">القناة</a>
+          </div>
         </div>
 
-        <div class="svc" data-wa="مرحباً 📊، أود المساعدة في كتابة التقارير المرحلية والنهائية باحتراف.">
-          <div class="row"><span class="ico">📈</span><span class="name">كتابة التقارير</span></div>
-          <div class="en">Reports (Mid/Final)</div>
-          <a class="go" href="javascript:void(0)">تواصل <small>واتساب</small></a>
+        <!-- ③ الواجبات (قناة موحدة مع الأسايمنت) -->
+        <div class="svc">
+          <div class="row"><span class="ico">③</span><span class="name">الواجبات</span></div>
+          <div class="en">Homework</div>
+          <div class="actions">
+            <a class="chip wa" data-wa="أهلاً 📚، أبحث عن من يساعدني في إنجاز الواجبات بشكل احترافي وسريع.">واتساب</a>
+            <a class="chip tg" href="https://t.me/Zak7117" target="_blank" rel="noopener">تلجرام</a>
+            <!-- نفس قناة الواجبات/الأسايمنت -->
+            <a class="chip ch" href="https://t.me/+4jS2H4ZfurI3ZmRk" target="_blank" rel="noopener">القناة</a>
+          </div>
         </div>
 
-        <div class="svc" data-wa="مرحباً 💡، أحتاج شروحات وتلخيصات مبسطة تساعدني أفهم المادة بسرعة.">
-          <div class="row"><span class="ico">📚</span><span class="name">شروحات وتلخيصات</span></div>
+        <!-- ④ البروجكت -->
+        <div class="svc">
+          <div class="row"><span class="ico">④</span><span class="name">البروجكت</span></div>
+          <div class="en">Projects</div>
+          <div class="actions">
+            <a class="chip wa" data-wa="مرحباً 🚀، لدي مشروع وأرغب في تنفيذه بأعلى جودة معكم.">واتساب</a>
+            <a class="chip tg" href="https://t.me/Zak7117" target="_blank" rel="noopener">تلجرام</a>
+            <a class="chip ch" href="https://t.me/+V6YtMA2P_ekxMjg0" target="_blank" rel="noopener">القناة</a>
+          </div>
+        </div>
+
+        <!-- ⑤ البحوث -->
+        <div class="svc">
+          <div class="row"><span class="ico">⑤</span><span class="name">البحوث</span></div>
+          <div class="en">Research</div>
+          <div class="actions">
+            <a class="chip wa" data-wa="أهلاً 📝، أحتاج إعداد بحث أكاديمي متكامل وفق المعايير المطلوبة.">واتساب</a>
+            <a class="chip tg" href="https://t.me/Zak7117" target="_blank" rel="noopener">تلجرام</a>
+            <a class="chip ch" href="https://t.me/+LFKccqB-4UBkYWFk" target="_blank" rel="noopener">القناة</a>
+          </div>
+        </div>
+
+        <!-- ⑥ التقارير -->
+        <div class="svc">
+          <div class="row"><span class="ico">⑥</span><span class="name">التقارير المرحلية والنهائية</span></div>
+          <div class="en">Reports</div>
+          <div class="actions">
+            <a class="chip wa" data-wa="مرحباً 📊، أود تجهيز تقاريري بأسلوب احترافي ومرتب.">واتساب</a>
+            <a class="chip tg" href="https://t.me/Zak7117" target="_blank" rel="noopener">تلجرام</a>
+            <a class="chip ch" href="https://t.me/+wLp_hu4kbd85MTRk" target="_blank" rel="noopener">القناة</a>
+          </div>
+        </div>
+
+        <!-- ⑦ شروحات وتلخيصات -->
+        <div class="svc">
+          <div class="row"><span class="ico">⑦</span><span class="name">شروحات المواد + تلخيصات</span></div>
           <div class="en">Tutorials & Summaries</div>
-          <a class="go" href="javascript:void(0)">تواصل <small>واتساب</small></a>
+          <div class="actions">
+            <a class="chip wa" data-wa="مرحباً 💡، أريد شروحات وتلخيصات تسهل علي فهم المادة وتحسين مستواي.">واتساب</a>
+            <a class="chip tg" href="https://t.me/Zak7117" target="_blank" rel="noopener">تلجرام</a>
+            <a class="chip ch" href="https://t.me/+rV1sdeoWu4hmZDc0" target="_blank" rel="noopener">القناة</a>
+          </div>
         </div>
 
-        <div class="svc" data-wa="مرحباً 🎯، أبحث عن دعم للكويزات والامتحانات القادمة.">
-          <div class="row"><span class="ico">✅</span><span class="name">حل كويزات وامتحانات</span></div>
-          <div class="en">Quizzes & Exams</div>
-          <a class="go" href="javascript:void(0)">تواصل <small>واتساب</small></a>
+        <!-- ⭐ سيفي وتصميمات -->
+        <div class="svc">
+          <div class="row"><span class="ico">⭐</span><span class="name">سيفي احترافي وتصميمات</span></div>
+          <div class="en">CV & Designs</div>
+          <div class="actions">
+            <a class="chip wa" data-wa="أهلاً ✨، أبحث عن تصميم سيرة ذاتية احترافية تجذب أصحاب العمل.">واتساب</a>
+            <a class="chip tg" href="https://t.me/Zak7117" target="_blank" rel="noopener">تلجرام</a>
+            <a class="chip ch" href="https://t.me/+QbfovWYncnFlOTg0" target="_blank" rel="noopener">القناة</a>
+          </div>
         </div>
 
-        <div class="svc" data-wa="مرحباً 🎨، أحتاج تصاميم وعروض بوربوينت مميزة.">
-          <div class="row"><span class="ico">🎨</span><span class="name">تصاميم وعروض بوربوينت</span></div>
-          <div class="en">Designs & PowerPoint</div>
-          <a class="go" href="javascript:void(0)">تواصل <small>واتساب</small></a>
-        </div>
-
-        <div class="svc" data-wa="مرحباً 💼، أريد سيرة ذاتية احترافية تعكس مهاراتي.">
-          <div class="row"><span class="ico">💼</span><span class="name">سيرة ذاتية احترافية (C.V)</span></div>
-          <div class="en">Professional CV</div>
-          <a class="go" href="javascript:void(0)">تواصل <small>واتساب</small></a>
-        </div>
       </div>
 
       <div class="hr"></div>
 
       <div class="socials">
-        <a href="https://wa.me/966535282067?text=%D9%85%D8%B1%D8%AD%D8%A8%D8%A7%D9%8B%20%D8%8C%20%D8%A3%D8%B1%D9%8A%D8%AF%20%D8%A7%D9%84%D8%AA%D9%88%D8%A7%D8%B5%D9%84%20%D8%A7%D9%84%D8%B3%D8%B1%D9%8A%D8%B9%20%D9%85%D8%B9%20Zakaria." title="واتساب" target="_blank">📞</a>
+        <a href="https://wa.me/966535282067" title="واتساب" target="_blank">📞</a>
         <a href="https://t.me/Zak7117" title="تيليجرام" target="_blank">✈️</a>
       </div>
 
       <div class="hr"></div>
-      <div class="foot"><span>© Zakaria 2025 — صفحة روابط</span></div>
+      <div class="foot"><span>صُمِّمت بحب • صفحة روابط</span></div>
     </section>
   </main>
 
   <script>
-    const WA_PHONE = '966535282067'; // بصيغة دولية بدون +
+    // رقم الواتساب بصيغة دولية بدون +
+    const WA_PHONE = '966535282067';
     function openWhatsApp(message){
       const txt = encodeURIComponent(message || 'مرحباً، أريد معرفة الخدمات المتاحة.');
       const url = `https://wa.me/${WA_PHONE}?text=${txt}`;
       window.open(url, '_blank', 'noopener');
     }
-    document.querySelectorAll('[data-wa]').forEach(el => el.addEventListener('click', () => openWhatsApp(el.getAttribute('data-wa'))));
+    // فعّل أزرار واتساب المخصصة
+    document.querySelectorAll('.chip.wa[data-wa]').forEach(el=>{
+      el.addEventListener('click', ()=> openWhatsApp(el.getAttribute('data-wa')));
+    });
   </script>
 </body>
-</html>
+            </html>
